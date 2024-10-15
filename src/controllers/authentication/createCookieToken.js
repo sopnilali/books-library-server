@@ -1,5 +1,4 @@
 const generateToken = require('../../utils/generateToken');
-require('dotenv').config()
 
 const createCookieToken = (req, res, next)=> {
     const user = req.body;
@@ -11,7 +10,6 @@ const createCookieToken = (req, res, next)=> {
       sameSite: 'none'
     })
     .send({success: true});
-    next();
 }
 
 module.exports = createCookieToken

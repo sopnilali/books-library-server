@@ -15,7 +15,6 @@ const bookCategoryRoutes = require('./routes/bookcategory')
 const customerReviewRoutes = require('./routes/customerreview')
 const authenticationRoutes = require('./routes/authentication')
 //middlewares
-app.use(express.json());
 applyMiddlewares(app)
 
 
