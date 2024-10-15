@@ -5,7 +5,7 @@ const globalRoutes = (app)=>{
     })
 
     app.all('*', (req, res, next) => {
-        const error = new Error(` Could not found ${req.url}`);
+        const error = new Error(`Could not found ${req.url}`);
         error.status = 404;
         next(error);
     })
